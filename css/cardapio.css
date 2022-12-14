@@ -1,0 +1,391 @@
+/*------ resources ------*/
+
+@font-face {
+    font-family: CHALK;
+    src: url("../resources/Chalk-Regular.ttf");
+}
+
+@font-face {
+    font-family: tangosans;
+    src: url("../resources/TangoSans.ttf");
+}
+
+@font-face {
+    font-family: berk;
+    src: url("../resources/BerkshireSwash-Regular.ttf");
+}
+
+@font-face {
+    font-family: magicretro;
+    src: url("../resources/Magic Retro.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*------ header ------*/
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(3,37,39,0.7),rgba(3,37,39,0.7)),url("../resources/VARIOS AI.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    width: 150px;
+}
+
+#logo:hover {
+    width: 160px;
+    transition: 1s;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li a:hover {
+    flex: 1;
+    text-align: right;
+    font-size: 20px;
+    transition: 0.8s;
+}
+
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #d5ebed;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: tangosans;
+    font-size: 18px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f9b513;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+@keyframes caixa-de-texto {
+    0% {
+        top: 100%;
+    }
+    90% {
+        top: 54%;
+    }
+    100% {
+        top: 55%;
+    }
+}
+
+.caixa-de-texto {
+    width: 90%;
+    color: aliceblue;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    animation: caixa-de-texto 1s;
+}
+
+.caixa-de-texto h1 {
+    font-family: magicretro;
+    font-size: 60px;
+    font-weight: 300;
+}
+
+.caixa-de-texto h1:hover {
+    font-family: magicretro;
+    font-size: 62px;
+    transition: 1s;
+    font-weight: 300;
+}
+
+.caixa-de-texto p {
+    font-family: chalk;
+    margin: 4px 0 40px;
+    font-size: 20px;
+}
+
+/*------ corpo cardapio ------*/
+.cardapio {
+    background-color: #fbf7cf;
+}
+
+.itens-cardapio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 10rem);
+    padding-top: 10%;
+}
+
+.itens-cardapio p, p1, p2, p3, p4 {
+    font-family: tangosans;
+    font-size: 25px;
+    color: #f9b513;
+}
+
+.itens-cardapio h2 {
+    font-family: berk;
+    font-size: 60px;
+    color: #32bfc1;
+}
+
+.itens-cardapio h2 a:hover {
+    font-family: berk;
+    font-size: 65px;
+    transition: 1s;
+    color: #32bfc1;
+}
+
+.itens-cardapio h2 a {
+    text-decoration: none;
+    color: #32bfc1;
+}
+
+
+/*------ ALANI ------*/
+
+.alani h2 a::after {
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: #f9b513;
+    display: flex;
+    transition: 0.5s;
+}
+
+.alani h2 a:hover::after {
+    width: 80%;
+}
+
+.alani p {
+    padding-top: 12px;
+}
+
+.alani {
+    padding-left: 30%;
+    grid-column: 1/1;
+    grid-row: 1/1;
+}
+
+/*------ OPAE ------*/
+
+.opae h2 a::after {
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: #f9b513;
+    display: flex;
+    transition: 0.5s;
+}
+
+.opae h2 a:hover::after {
+    width: 80%;
+}
+
+.opae p1 {
+    display: inline-block;
+    padding-top: 18px;
+    color: #f9b513;
+    font-size: 25px;
+}
+
+.opae {
+    padding-left: 30%;
+    grid-column: 1/1;
+    grid-row: 2/2;
+}
+
+/*------ MEAI ------*/
+
+.meai h2 a::after {
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: #f9b513;
+    display: flex;
+    transition: 0.5s;
+}
+
+.meai h2 a:hover::after {
+    width: 80%;
+}
+
+.meai p2 {
+    display: inline-block;
+    padding-top: 16px;
+}
+
+.meai {
+    padding-left: 30%;
+    grid-column: 1/1;
+    grid-row: 3/3;
+}
+
+/*------ UALA ------*/
+.uala h2 a::after {
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: #f9b513;
+    display: flex;
+    transition: 0.5s;
+}
+
+.uala h2 a:hover::after {
+    width: 80%;
+}
+
+.uala p3 {
+    display: inline-block;
+    padding-top: 16px;
+}
+
+.uala {
+    padding-left: 10%;
+    padding-top: 20%;
+    grid-column: 3/3;
+    grid-row: 4/4;
+}
+
+/*------ OMAO ------*/
+.omao h2 a::after {
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: #f9b513;
+    display: flex;
+    transition: 0.5s;
+}
+
+.omao h2 a:hover::after {
+    width: 80%;
+}
+
+.omao p4 {
+    display: inline-block;
+    padding-top: 16px;
+}
+
+.omao {
+    padding-left: 10%;
+    padding-top: 30%;
+    grid-column: 3/3;
+    grid-row: 5/5;
+}
+
+/*------ footer ------*/
+
+footer {
+    background-color: #00b2be;
+    overflow: hidden;
+}
+
+.footer-info {
+    display: grid;
+    grid-template-columns: repeat(7, 2fr);
+    grid-template-rows: repeat(1, 1fr);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.tel {
+    padding-left: 30%;
+    grid-column: 1/1;
+    grid-row: 1/1;
+}
+
+.loc {
+    grid-column: 3/3;
+    grid-row: 1/1;
+}
+
+.ho {
+    grid-column: 5/5;
+    grid-row: 1/1;
+}
+
+.logo-footer {
+    grid-column: 6/7;
+    grid-row: 1/1;
+}
+
+.logo-footer img {
+    margin-left: 50%;
+    margin-top: 20%;
+    padding: 40%, 40%;
+    width: 100%;
+    position: relative;
+}
+
+.footer-info h1 {
+    font-family: magicretro;
+    font-size: 30px;
+    font-weight: 500;
+    color: #fbf7cf;
+}
+
+.tel h1 {
+    margin-right: 100px;
+}
+
+.ho h1{
+    margin-right: 180px;
+}
+
+.loc h1 {
+    margin-right:180px;
+}
+
+.footer-info p, p1{
+    font-family: tangosans;
+    font-size: 16px;
+    color: #d5ebed;
+}
+
+.ho p {
+    padding-right: 110px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.loc p {
+    padding-right: 110px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.tel p {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
